@@ -1,3 +1,6 @@
+![mcp-b4a](https://github.com/user-attachments/assets/115aa63b-3a12-4408-8ae1-479290cfca2f)
+
+
 # MCP Server for B4A
 
 Bridges [Claude Code](https://claude.ai/claude-code) with the [B4A](https://www.b4x.com/b4a.html) (Basic4Android) ecosystem.

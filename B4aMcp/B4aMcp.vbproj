@@ -1,0 +1,21 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <RootNamespace>B4aMcp</RootNamespace>
+    <TargetFramework>net8.0</TargetFramework>
+    <SelfContained>true</SelfContained>
+    <RuntimeIdentifier>win-x64</RuntimeIdentifier>
+    <PublishSingleFile>true</PublishSingleFile>
+    <AssemblyName>B4aMcp</AssemblyName>
+    <StartupObject>B4aMcp.Program</StartupObject>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="ModelContextProtocol" Version="0.9.0-preview.2" />
+    <PackageReference Include="Microsoft.Extensions.Hosting" Version="8.*" />
+    <PackageReference Include="Microsoft.Extensions.Logging.Console" Version="8.*" />
+    <PackageReference Include="Newtonsoft.Json" Version="13.*" />
+  </ItemGroup>
+
+</Project>

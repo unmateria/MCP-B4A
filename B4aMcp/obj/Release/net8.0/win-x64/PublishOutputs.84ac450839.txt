@@ -1,0 +1,2 @@
+C:\desarrollo\mcp-b4a\publish\B4aMcp.pdb
+C:\desarrollo\mcp-b4a\publish\B4aMcp.exe

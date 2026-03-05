@@ -217,7 +217,6 @@ C:\desarrollo\mcp-b4a\B4aMcp\bin\Release\net8.0\win-x64\createdump.exe
 C:\desarrollo\mcp-b4a\B4aMcp\bin\Release\net8.0\win-x64\hostfxr.dll
 C:\desarrollo\mcp-b4a\B4aMcp\bin\Release\net8.0\win-x64\hostpolicy.dll
 C:\desarrollo\mcp-b4a\B4aMcp\bin\Release\net8.0\win-x64\mscordaccore.dll
-C:\desarrollo\mcp-b4a\B4aMcp\bin\Release\net8.0\win-x64\mscordaccore_amd64_amd64_8.0.1425.11118.dll
 C:\desarrollo\mcp-b4a\B4aMcp\bin\Release\net8.0\win-x64\mscordbi.dll
 C:\desarrollo\mcp-b4a\B4aMcp\bin\Release\net8.0\win-x64\mscorrc.dll
 C:\desarrollo\mcp-b4a\B4aMcp\bin\Release\net8.0\win-x64\msquic.dll
@@ -232,3 +231,5 @@ C:\desarrollo\mcp-b4a\B4aMcp\obj\Release\net8.0\win-x64\refint\B4aMcp.dll
 C:\desarrollo\mcp-b4a\B4aMcp\obj\Release\net8.0\win-x64\B4aMcp.pdb
 C:\desarrollo\mcp-b4a\B4aMcp\obj\Release\net8.0\win-x64\B4aMcp.genruntimeconfig.cache
 C:\desarrollo\mcp-b4a\B4aMcp\obj\Release\net8.0\win-x64\ref\B4aMcp.dll
+C:\desarrollo\mcp-b4a\B4aMcp\bin\Release\net8.0\win-x64\mscordaccore_amd64_amd64_8.0.2426.7010.dll
+C:\desarrollo\mcp-b4a\B4aMcp\obj\Release\net8.0\win-x64\B4aMcp.sourcelink.json

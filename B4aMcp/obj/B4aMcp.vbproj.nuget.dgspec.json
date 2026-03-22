@@ -72,6 +72,10 @@
             "Newtonsoft.Json": {
               "target": "Package",
               "version": "[13.*, )"
+            },
+            "System.Drawing.Common": {
+              "target": "Package",
+              "version": "[8.*, )"
             }
           },
           "imports": [

@@ -15,7 +15,7 @@ Imports System.Reflection
 <Assembly: System.Reflection.AssemblyCompanyAttribute("B4aMcp"),  _
  Assembly: System.Reflection.AssemblyConfigurationAttribute("Debug"),  _
  Assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0"),  _
- Assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+9e58c4fed35ce5c1770488154e627facb6d3c103"),  _
+ Assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+cad3a78e891d0ab10fcb49a09bd09c6401f7a8b5"),  _
  Assembly: System.Reflection.AssemblyProductAttribute("B4aMcp"),  _
  Assembly: System.Reflection.AssemblyTitleAttribute("B4aMcp"),  _
  Assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")> 

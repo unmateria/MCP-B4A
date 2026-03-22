@@ -14,6 +14,7 @@
           "Microsoft.NET.ILLink.Tasks": "8.0.24",
           "ModelContextProtocol": "0.9.0-preview.2",
           "Newtonsoft.Json": "13.0.4",
+          "System.Drawing.Common": "8.0.25",
           "runtimepack.Microsoft.NETCore.App.Runtime.win-x64": "8.0.24"
         },
         "runtime": {
@@ -1112,6 +1113,14 @@
         }
       },
       "Microsoft.NET.ILLink.Tasks/8.0.24": {},
+      "Microsoft.Win32.SystemEvents/8.0.0": {
+        "runtime": {
+          "runtimes/win/lib/net8.0/Microsoft.Win32.SystemEvents.dll": {
+            "assemblyVersion": "8.0.0.0",
+            "fileVersion": "8.0.23.53103"
+          }
+        }
+      },
       "ModelContextProtocol/0.9.0-preview.2": {
         "dependencies": {
           "Microsoft.Extensions.Caching.Abstractions": "10.0.3",
@@ -1164,6 +1173,17 @@
           "runtimes/win/lib/net8.0/System.Diagnostics.EventLog.dll": {
             "assemblyVersion": "8.0.0.0",
             "fileVersion": "8.0.1024.46610"
+          }
+        }
+      },
+      "System.Drawing.Common/8.0.25": {
+        "dependencies": {
+          "Microsoft.Win32.SystemEvents": "8.0.0"
+        },
+        "runtime": {
+          "lib/net8.0/System.Drawing.Common.dll": {
+            "assemblyVersion": "8.0.0.0",
+            "fileVersion": "8.0.2526.11204"
           }
         }
       },
@@ -1426,6 +1446,13 @@
       "path": "microsoft.net.illink.tasks/8.0.24",
       "hashPath": "microsoft.net.illink.tasks.8.0.24.nupkg.sha512"
     },
+    "Microsoft.Win32.SystemEvents/8.0.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-9opKRyOKMCi2xJ7Bj7kxtZ1r9vbzosMvRrdEhVhDz8j8MoBGgB+WmC94yH839NPH+BclAjtQ/pyagvi/8gDLkw==",
+      "path": "microsoft.win32.systemevents/8.0.0",
+      "hashPath": "microsoft.win32.systemevents.8.0.0.nupkg.sha512"
+    },
     "ModelContextProtocol/0.9.0-preview.2": {
       "type": "package",
       "serviceable": true,
@@ -1460,6 +1487,13 @@
       "sha512": "sha512-n1ZP7NM2Gkn/MgD8+eOT5MulMj6wfeQMNS2Pizvq5GHCZfjlFMXV2irQlQmJhwA2VABC57M0auudO89Iu2uRLg==",
       "path": "system.diagnostics.eventlog/8.0.1",
       "hashPath": "system.diagnostics.eventlog.8.0.1.nupkg.sha512"
+    },
+    "System.Drawing.Common/8.0.25": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-Am+9K9F1RaQf8+aayuglr/uIsADlUOS+3eOqGKsDsTBQbPjY0q+55HUYiktDonPMlDay3WPHuZHuAW2cQs8LPw==",
+      "path": "system.drawing.common/8.0.25",
+      "hashPath": "system.drawing.common.8.0.25.nupkg.sha512"
     },
     "System.IO.Pipelines/10.0.3": {
       "type": "package",

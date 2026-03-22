@@ -93,6 +93,41 @@ Namespace Tools
             End Try
         End Function
 
+        <McpServerTool, Description(
+            "Compiles a B4A project AND installs the resulting APK on the device in one step. " &
+            "Equivalent to calling b4a_build followed by b4a_install_apk. " &
+            "Returns the combined build log and install result.")>
+        Public Shared Async Function B4aBuildAndInstall(
+            <Description("Full path to the .b4a project file")> projectPath As String,
+            <Description("ADB device serial (optional, uses first device if not specified)")> Optional deviceSerial As String = "",
+            <Description("Build mode: 'release' (default) or 'debug'")> Optional mode As String = "release"
+        ) As Task(Of String)
+            ' Build
+            Dim buildResult = Await B4aBuild(projectPath, mode)
+
+            ' Check for failure (exit code != 0 means "Completed successfully" won't appear)
+            If Not buildResult.Contains("Completed successfully") Then
+                Return $"Build FAILED — install skipped.{Environment.NewLine}{buildResult}"
+            End If
+
+            ' Extract APK path from build output
+            Dim apkPath As String = Nothing
+            For Each line In buildResult.Split(New String() {Environment.NewLine}, StringSplitOptions.RemoveEmptyEntries)
+                If line.StartsWith("Output:") Then
+                    apkPath = line.Substring("Output:".Length).Trim()
+                    Exit For
+                End If
+            Next
+
+            If String.IsNullOrEmpty(apkPath) OrElse Not File.Exists(apkPath) Then
+                Return $"Build succeeded but APK path not found in output.{Environment.NewLine}{buildResult}"
+            End If
+
+            ' Install
+            Dim installResult = Await AdbTools.B4aInstallApk(apkPath, deviceSerial)
+            Return $"{buildResult}{Environment.NewLine}--- Install ---{Environment.NewLine}{installResult}"
+        End Function
+
         <McpServerTool, Description("Returns the log from the last b4a_build call")>
         Public Shared Function B4aGetBuildLog() As String
             Dim log As String = Nothing

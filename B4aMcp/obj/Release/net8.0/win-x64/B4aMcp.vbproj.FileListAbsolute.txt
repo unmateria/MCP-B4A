@@ -233,3 +233,5 @@ C:\desarrollo\mcp-b4a\B4aMcp\obj\Release\net8.0\win-x64\B4aMcp.genruntimeconfig.
 C:\desarrollo\mcp-b4a\B4aMcp\obj\Release\net8.0\win-x64\ref\B4aMcp.dll
 C:\desarrollo\mcp-b4a\B4aMcp\bin\Release\net8.0\win-x64\mscordaccore_amd64_amd64_8.0.2426.7010.dll
 C:\desarrollo\mcp-b4a\B4aMcp\obj\Release\net8.0\win-x64\B4aMcp.sourcelink.json
+C:\desarrollo\mcp-b4a\B4aMcp\bin\Release\net8.0\win-x64\Microsoft.Win32.SystemEvents.dll
+C:\desarrollo\mcp-b4a\B4aMcp\bin\Release\net8.0\win-x64\System.Drawing.Common.dll

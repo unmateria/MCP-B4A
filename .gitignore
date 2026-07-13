@@ -1,0 +1,11 @@
+# Build output
+[Bb]in/
+[Oo]bj/
+publish/
+publish_new/
+*.pdb
+*.user
+.vs/
+
+# Notas internas de desarrollo asistido por IA
+CLAUDE.md

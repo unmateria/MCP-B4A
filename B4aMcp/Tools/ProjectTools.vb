@@ -168,6 +168,20 @@ Namespace Tools
                     .fix = "Use kvs.Get(key) and kvs.Put(key, value)."
                 },
                 New With {
+                    .title = "Canvas.DrawText follows the system font size setting",
+                    .severity = "CRITICAL",
+                    .description = "Canvas.DrawText scales its TextSize by scaledDensity, so Android's accessibility font-size setting multiplies every string you draw. Rectangles, bitmaps and touch zones are in pixels and do not move, so labels overflow the buttons behind them. The device DPI is only half the story: two phones at the same DPI render text at different sizes if their font-size setting differs.",
+                    .example = "A phone with the font size at 130% and an emulator at 85% differ by 53%: the UI fits in the emulator and text spills out of every button on the phone.",
+                    .fix = "Read it and divide it out: Dim ph As Phone : Dim raw As String = ph.GetSettings(""font_scale"") (empty means 1.0), then TextScale = refDpi / deviceDpi / fontScale. To reproduce a phone on an emulator: adb shell settings put system font_scale 1.3 and adb shell wm density <dpi>."
+                },
+                New With {
+                    .title = "The Main module lives inside the .b4a file, not in a .bas",
+                    .severity = "MEDIUM",
+                    .description = "Main is stored in the project file itself. Anything that walks *.bas — a grep, a mass rename, a refactor — silently skips it.",
+                    .example = "Searching the .bas files for where a new game is initialised finds nothing, because StartNewGame is in the .b4a. A sed rename over *.bas leaves Main pointing at the old package and the build fails.",
+                    .fix = "Include the .b4a file in any search or rewrite that touches module code."
+                },
+                New With {
                     .title = "Build config first token must be 'Default'",
                     .severity = "LOW",
                     .description = "In the B4A project file, Build1 (and other build configs) must start with 'Default' as the first token.",

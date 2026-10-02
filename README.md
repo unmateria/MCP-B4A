@@ -9,6 +9,8 @@ Bridges [Claude Code](https://claude.ai/claude-code) (and any MCP-compatible cli
 
 Exposes 31 tools for compiling projects, reading/editing source modules, reading/modifying layouts, exploring libraries, deploying APKs, debugging via ADB, doing live visual UI verification directly on the device, and cleaning up sprite PNG artifacts — all without leaving your AI coding assistant.
 
+There is a fork of this project for B4X at https://github.com/jakebullet70/MCP-B4J
+
 ---
 
 ## Tools

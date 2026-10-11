@@ -1,6 +1,7 @@
 Imports ModelContextProtocol.Server
 Imports System.ComponentModel
 Imports System.IO
+Imports B4aMcp.Utils
 
 Namespace Tools
     <McpServerToolType>
@@ -80,7 +81,8 @@ Namespace Tools
                     result = result.Replace(vbLf, vbCrLf)
                 End If
 
-                File.WriteAllText(basPath, result)
+                ' Keep the file's own encoding too (the IDE writes a UTF-8 BOM)
+                TextFileIO.WritePreservingBom(basPath, result)
 
                 Dim replacements = If(replace_all, count, 1)
                 Return $"OK: {replacements} replacement(s) made. Backup saved as {basPath}.bak"

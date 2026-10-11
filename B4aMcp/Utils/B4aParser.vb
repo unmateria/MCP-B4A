@@ -130,7 +130,7 @@ Namespace Utils
                     $"#Region  Manifest Editor{Environment.NewLine}{newManifest}{Environment.NewLine}#End Region"
             End If
             File.Copy(projectFilePath, projectFilePath & ".bak", overwrite:=True)
-            File.WriteAllText(projectFilePath, newContent)
+            TextFileIO.WritePreservingBom(projectFilePath, newContent)
             CacheManager.Invalidate(projectFilePath)
         End Sub
     End Class
